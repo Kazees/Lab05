@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Filmes</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Filmes</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="cadastro-salas.html">Cadastro de Salas</a></li>
+                <li><a href="cadastro-sessoes.html">Cadastro de Sessões</a></li>
+            </ul>
+        </nav>
+        <form id="form-filme">
+            <div><label for="titulo">Título:</label><input type="text" id="titulo" required></div>
+            <div><label for="descricao">Descrição:</label><textarea id="descricao" rows="4" required></textarea></div>
+            <div><label for="genero">Gênero:</label><select id="genero" required><option value="Ação">Ação</option><option value="Comédia">Comédia</option><option value="Drama">Drama</option><option value="Ficção Científica">Ficção Científica</option></select></div>
+            <div><label for="classificacao">Classificação Indicativa:</label><select id="classificacao" required><option value="Livre">Livre</option><option value="10">10 anos</option><option value="12">12 anos</option><option value="14">14 anos</option><option value="16">16 anos</option><option value="18">18 anos</option></select></div>
+            <div><label for="duracao">Duração (minutos):</label><input type="number" id="duracao" required></div>
+            <div><label for="dataEstreia">Data de Estreia:</label><input type="date" id="dataEstreia" required></div>
+            <button type="submit">Salvar Filme</button>
+        </form>
+    </div>
+    <script src="src/js/cadastro-filmes.js"></script>
+</body>
+</html>

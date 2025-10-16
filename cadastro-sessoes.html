@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Sessões</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Sessões</h1>
+        <nav>
+             <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="cadastro-filmes.html">Cadastro de Filmes</a></li>
+                <li><a href="cadastro-salas.html">Cadastro de Salas</a></li>
+            </ul>
+        </nav>
+        <form id="form-sessao">
+            <div><label for="filme">Filme:</label><select id="filme" required></select></div>
+            <div><label for="sala">Sala:</label><select id="sala" required></select></div>
+            <div><label for="dataHora">Data e Hora:</label><input type="datetime-local" id="dataHora" required></div>
+            <div><label for="preco">Preço (R$):</label><input type="number" id="preco" step="0.50" required></div>
+            <div><label for="idioma">Idioma:</label><select id="idioma" required><option value="Dublado">Dublado</option><option value="Legendado">Legendado</option></select></div>
+            <div><label for="formato">Formato:</label><select id="formato" required><option value="2D">2D</option><option value="3D">3D</option></select></div>
+            <button type="submit">Salvar Sessão</button>
+        </form>
+    </div>
+    <script src="src/js/cadastro-sessoes.js"></script>
+</body>
+</html>
